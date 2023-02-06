@@ -2,12 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Homepage</title>
+    <title>Works</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- My Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/darkversion_16px.svg">
+
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
@@ -17,19 +18,21 @@
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/page.css">
-    <link rel="stylesheet" type="text/css" href="./css/about.css">
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
     <link rel="stylesheet" type="text/css" href="./css/button.css">
     <script src="js/nav.js" defer></script>
+    <script src="js/button.js" defer></script>
   </head>
   <body>
 
-    <nav id="navbar">
+    <nav id="navbar" class="">
       <div class="nav-wrapper">
         <div class="logo">
           <a href="index.html"><img id="logo" src="img/lightversion_16px.svg">uli</a>
         </div>
 
         <ul id="menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="works.html">Works</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About</a></li>
@@ -37,7 +40,7 @@
       </div>
     </nav>
 
-    <!-- Moblie Menu Icon -->
+    <!-- Menu Icon -->
     <div class="menuIcon">
       <span class="icon icon-bars"></span>
       <span class="icon icon-bars overlay"></span>
@@ -54,6 +57,84 @@
 
     <div class="center-div">
 
+      <a href="https://www.deviantart.com/tanukky/art/Tom-Nook-Under-Construction-520110284" target="_Source"><img src="./img/tomnook.png" style="width: 25%; display: block; margin-left: auto; margin-right: auto;"></a>
+
+      <div class='btns-holder'>
+        <button class="btns btns-3" onclick="toggleVisibility('tab1');">
+          <span id="buttons-hover">Games</span>
+        </button>
+        <button class="btns btns-3" onclick="toggleVisibility('tab2');">
+          <span id="buttons-hover">UI/UX</span>
+        </button>
+        <button class="btns btns-3" onclick="toggleVisibility('tab3');">
+          <span id="buttons-hover">Motion Graphics</span>
+        </button>
+        <button class="btns btns-3" onclick="toggleVisibility('tab4');">
+          <span id="buttons-hover">Logos</span>
+        </button>
+        <button class="btns btns-3" onclick="toggleVisibility('tab5');">
+          <span id="buttons-hover">Others</span>
+        </button>
+      </div><br>
+
+
+      <div id="tab1"><!--beginner Div Start -->
+        <h2 class="sample-heading explanation">Games</h2><br>
+
+        <div class="row">
+          <div class="col-md-4 gridbox"><!-- Box 1 -->
+            <a href="https://www.deviantart.com/tanukky/art/Art-Trade-Espeon-and-Umbreon-464350878"><img src="./img/pokemons.png" style="width: 100%;"></a>
+          </div><!-- End of Box 1 -->
+
+          <div class="col-md-4 gridbox"><!-- Box 2 -->
+            <div class="bg-image hover-overlay">
+              <a href="departed.html"><img src="./img/departedicon.png" style="width: 100%;"></a>
+              <div class="mask" style="background: linear-gradient(45deg,rgba(29, 236, 197, 0.5),rgba(91, 14, 214, 0.5) 100%);">
+                <div class="text-info" class="scroll-hide">
+                    <h2 class="contact" class="hidden-text">Departed</h2>
+                    <figure id="description" class="hidden-text">A 2D sidescroller game.</figure>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End of Box 2 -->
+
+          <div class="col-md-4 gridbox"><!-- Box 3 -->
+            <div class="bg-image hover-overlay">
+              <a href="https://www.deviantart.com/tanukky/art/Art-Trade-Espeon-and-Umbreon-464350878" target="_Pokemon"><img src="./img/pokemons.png" style="width: 100%;"></a>
+              <div class="mask" style="background: linear-gradient(45deg,rgba(29, 236, 197, 0.5),rgba(91, 14, 214, 0.5) 100%);">
+                <div class="text-info" class="scroll-hide">
+                    <h2 class="contact" class="hidden-text">Project Title</h2>
+                    <figure id="description" class="hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</figure>
+
+                </div>
+              </div>
+            </div>
+          </div><!-- End of Box 3 -->
+
+        </div><!-- End of Row -->
+
+      </div>
+
+      <div id="tab2"><!--beginner Div Start -->
+        <h2 class="sample-heading explanation">UI/UX</h2><br>
+
+      </div>
+
+      <div id="tab3"><!--beginner Div Start -->
+        <h2 class="sample-heading explanation">Motion Graphics</h2><br>
+      </div>
+
+      <div id="tab4">
+        <h2 class="sample-heading explanation">Logos</h2><br>
+
+      </div>
+
+      <div id="tab5">
+        <h2 class="sample-heading explanation">Others</h2><br>
+
+      </div>
 
     </div>
 
@@ -77,6 +158,7 @@
               <!-- Links -->
               <h2 class="footer-title"> Links</h2>
               <nav id="footer-nav">
+                <li><a href="index.html">Home</a></li><br>
                 <li><a href="works.html">Works</a></li><br>
                 <li><a href="contact.html">Contact</a></li><br>
                 <li><a href="about.html">About</a></li>

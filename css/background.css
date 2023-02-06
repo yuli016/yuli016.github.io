@@ -1,0 +1,14 @@
+body {
+  background-image: url("https://yuli016.github.io/yulipantoja/img/white-diamond.svg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+  z-index: -100;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: auto;
+}
