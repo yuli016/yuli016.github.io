@@ -1,0 +1,32 @@
+body,html {
+  margin:0;
+  padding:0;
+  width: 100vw;
+  overflow-x:hidden;
+  box-sizing: border-box;
+  background-color: #eeecf8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.container-fill {
+  background-color: #4e3e59;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 3rem;
+  border: solid 2px #4e3e59;
+  bs-gutter-x: 1.5rem;
+  bs-gutter-y: 0;
+  width: 100%;
+}
+
+.my-4-my {
+    margin-top: 2rem!important;
+}
+
+footer p {
+  color: white;
+}

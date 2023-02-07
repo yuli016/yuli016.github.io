@@ -7,41 +7,47 @@
     <!-- My Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/darkversion_16px.svg">
     <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="./css/background.css">
-    <link rel="stylesheet" type="text/css" href="./css/navbar.css">
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
-    <link rel="stylesheet" type="text/css" href="./css/page.css">
-    <link rel="stylesheet" type="text/css" href="./css/about.css">
-    <link rel="stylesheet" type="text/css" href="./css/button.css">
-    <script src="js/nav.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/navigations.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="js/navs.js" defer></script>
   </head>
-  <body>
 
-    <nav id="navbar">
-      <div class="nav-wrapper">
+  <body>
+    <nav id="navbar" class="">
+        <!-- Navbar Logo -->
         <div class="logo">
-          <a href="index.html"><img id="logo" src="img/lightversion_16px.svg">uli</a>
+          <!-- Logo Placeholder for Inlustration -->
+          <a href="index.html"><img src="img/lightversion_16px.svg" width="40" height="40">Yuli Pantoja</a>
         </div>
 
+        <!-- Navbar Links -->
         <ul id="menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="works.html">Works</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
-      </div>
     </nav>
+     <div class="separator-top">
+     </div>
 
-    <!-- Moblie Menu Icon -->
+    <!-- Menu Icon -->
     <div class="menuIcon">
       <span class="icon icon-bars"></span>
       <span class="icon icon-bars overlay"></span>
     </div>
+
 
     <div class="overlay-menu">
       <ul id="menu">
@@ -50,79 +56,56 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About</a></li>
         </ul>
-    </div><br><br>
-
-    <div class="center-div">
-
-
     </div>
 
-    <footer class="text-center text-white">
+    <div class="belakang"></div>
 
-      <!-- Section: Links  -->
-      <section class="">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3s">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4s">
-              <!-- Content -->
-              <h2 class="footer-title"><img id="logo" src="img/lightversion_16px.svg">uli Pantoja</h2>
-              <p class="contact"></p>
-            </div>
-            <!-- Grid column -->
+    <!-- CMDW -->
+    <!--video belongs https://codepen.io/dudleystorey/pen/vnedg?editors=1010-->
+    <div id="video-container">
+    <div class="color-overlay"></div>
+      <video autoplay loop id="video-background" muted poster="http://thenewcode.com/assets/videos/blue.jpg" playsinline>
+        <source src="http://thenewcode.com/assets/videos/blue.mp4">
+        <source src="http://thenewcode.com/assets/videos/blue.webm">
+      </video>
 
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4s">
-              <!-- Links -->
-              <h2 class="footer-title"> Links</h2>
-              <nav id="footer-nav">
-                <li><a href="works.html">Works</a></li><br>
-                <li><a href="contact.html">Contact</a></li><br>
-                <li><a href="about.html">About</a></li>
-              </nav>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4s">
-              <!-- Links -->
-              <h2 class="footer-title"> Contacts</h2>
-              <p class="contact"><i class="fas fa-envelope"></i> yulipantoja@gmail.com</p>
-              <p class="contact"><i class="fas fa-phone"></i> (831) 783-8856</p>
-            </div>
-            <!-- Grid column -->
-          </div>
-          <!-- Grid row -->
+        <div class="content">
+          <h1>video background</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
         </div>
-      </section>
-      <!-- Section: Links  -->
+    </div><br>
 
-      <!-- Grid container -->
-      <div class="container pt-4">
-        <!-- Section: Social media -->
-        <section class="mb-4s">
+    <br>
 
-          <!-- Itch.io -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://yuli0.itch.io/" target="_Itch" role="button" data-mdb-ripple-color="dark"><i class="fab fa-itch-io"></i></a>
+    <div class="container-fill">
+      <footer class="py-5">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center">
+          <p class="col-md-4 mb-0"><a href = "mailto: yulipantoja@gmail.com"><svg src="img/evvelope-solid.svg" width="24" height="24"> </svg>  yulipantoja@gmail.com</a><br>(831) 783-8856</p>
 
-          <!-- Github -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Yuli016" target="_Github" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-md-0 me-md-auto text-decoration-none">
+            <img src="img/lightversion_16px.svg" width="40" height="40">
+          </a>
 
-          <!-- Linkedin -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/yulitsa-pantoja/" target="_Linkedin" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2">Home</a></li>
+            <li class="nav-item"><a href="works.html" class="nav-link px-2">Works</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2">Contact</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2">About</a></li>
+          </ul>
+        </footer>
 
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-        <div class="text-center p-3s">
-          © 2022 by <img id="logo" src="img/lightversion_16px.svg">uli Pantoja
+        <div class="d-flex flex-column flex-sm-row justify-content-between my-4-my border-top">
+          <p>© 2023 Yuli Pantoja</p>
+          <ul class="list-unstyled d-flex">
+            <!-- Itch.io -->
+            <a class="btn btn-link btn-floating btn-lg m-1" width="48" height="48" href="https://yuli0.itch.io/" target="_Itch" role="button" data-mdb-ripple-color="dark"><i class="fab fa-itch-io"></i></a>
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg m-1" width="48" height="48" href="https://github.com/Yuli016" target="_Github" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg m-1" width="48" height="48" href="https://www.linkedin.com/in/yulitsa-pantoja/" target="_Linkedin" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          </ul>
         </div>
-        <!-- Copyright -->
-    </footer>
-
+      </footer>
+    </div>
   </body>
 </html>
